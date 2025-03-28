@@ -1,0 +1,64 @@
+body {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-text{
+  text-align: center;
+  font-size: 55px;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.scroll-text span {
+  -webkit-background-clip: text;
+  color: hsl(0 0% 100% / 0.2); 
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-image: linear-gradient(90deg, white, white);
+}
+
+@keyframes scroll-reveal {
+  0% {
+    background-size: 0% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+.highlighted {
+  color: white; 
+  background-size: 100% 100%; 
+}
+
+.scroll-text {
+  overflow: hidden;
+  text-align: center;
+  font-size: 55px;
+  max-width: 1280px;
+  width: 100%;
+  color: transparent;
+}
+
+.scroll-space {
+  height: 100vh;
+  color: white;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
